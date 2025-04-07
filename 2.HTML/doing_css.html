@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @media screen and (min-width: 0px) {
+      body {
+        background-color: lightblue;
+      }
+      .menu {
+        display: block;
+      }
+      nav {
+        display: none;
+      }
+      .card {
+        width: 100%;
+      }
+      main {
+        flex-direction: column;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      body {
+        width: 100vw;
+        background-color: lightcoral;
+      }
+      nav {
+        display: flex;
+      }
+      .menu {
+        display: none;
+      }
+      main {
+        flex-direction: row;
+      }
+    }
+    a {
+      text-decoration: none;
+      padding-right: 10px;
+      border-right: 2px solid #fff7f7;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #f7f7f7;
+    }
+    main {
+      padding: 40px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center   ;
+    }
+    .card {
+      flex: 1;
+      padding: 20px;
+      background-color: #fff7f7;
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px #d6d5d5;
+    }
+  </style>
+  <body>
+    <header>
+      <h3>LOGO</h3>
+      <button class="menu">= MENU</button>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="card">
+        <h3>Card number</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem modi
+          minus exercitationem ipsam quibusdam. Earum veniam architecto
+          doloribus cumque. Autem cupiditate nobis amet voluptatem dolor ea
+          incidunt molestiae, ut excepturi!
+        </p>
+        <a href="#">Xem chi tiet</a>
+      </div>
+      <div class="card">
+        <h3>Card number</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem modi
+          minus exercitationem ipsam quibusdam. Earum veniam architecto
+          doloribus cumque. Autem cupiditate nobis amet voluptatem dolor ea
+          incidunt molestiae, ut excepturi!
+        </p>
+        <a href="#">Xem chi tiet</a>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      main {
+        background-color: aliceblue;
+        width: 100%;
+        height: 100vh;
+      }
+      header {
+        height: 100px;
+        background-color: rgb(210, 155, 155);
+      }
+      nav {
+        background-color: aqua;
+      }
+      article {
+        background-color: rgb(125, 156, 230);
+        padding: 10px;
+        float: left; /* Sử dụng float để đặt article bên trái */
+        width: calc(100% - 250px); /* Để lại không gian cho aside */
+        height: 100px;
+      }
+      aside {
+        background-color: rgb(230, 230, 125);
+        width: 230px; /* Đặt chiều rộng cho aside */
+        float: right; /* Sử dụng float để đặt aside bên phải */
+        height: 120px;
+      }
+      footer {
+        background-color: rgb(125, 230, 125);
+        clear: both; /* Đảm bảo footer nằm dưới các phần tử nổi */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Layout web co ban</h1>
+    <main>
+      <header>
+        Header
+        <nav>nav</nav>
+      </header>
+      <article>
+        article
+        <section style="background-color: rgb(230, 125, 219)">section</section>
+        <section style="background-color: rgb(230, 125, 219)">section</section>
+      </article>
+      <aside>Aside</aside>
+      <footer>Footer</footer>
+    </main>
+  </body>
+</html>
